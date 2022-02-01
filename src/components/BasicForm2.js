@@ -1,9 +1,9 @@
 /*
- * react forms validation using useState custom hooks 
+ * react forms validation using useReducer custom hooks 
  * 
  */
 
-import useInput from './hooks/use-input';
+import useInput2 from './hooks/use-input2';
 
 const validateEmail = (input) => {
   // eslint-disable-next-line
@@ -22,7 +22,7 @@ const BasicForm = (props) => {
     valueChangeHandler : firstnameChangeHandler,
     inputBlurHandler : firstnameBlurHandler,
     reset: resetFirstName
-  } = useInput( isNotEmpty );
+  } = useInput2( isNotEmpty );
 
   const {
     value: enteredLastName, 
@@ -31,7 +31,7 @@ const BasicForm = (props) => {
     valueChangeHandler : lastnameChangeHandler,
     inputBlurHandler : lastnameBlurHandler,
     reset: resetLastName
-  } = useInput( isNotEmpty );
+  } = useInput2( isNotEmpty );
 
   const {
     value: enteredEmail, 
@@ -40,7 +40,7 @@ const BasicForm = (props) => {
     valueChangeHandler : emailInputChangeHandler,
     inputBlurHandler : emailInputBlurHandler,
     reset: resetEmail
-  } = useInput( isEmail );
+  } = useInput2( isEmail );
 
   let formIsValid = false;
 

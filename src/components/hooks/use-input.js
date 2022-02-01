@@ -1,3 +1,8 @@
+/*
+ * react custom hooks using useState
+ * 
+ */
+
 import { useState } from 'react';
 
 const useInput = (validateValue) => {
