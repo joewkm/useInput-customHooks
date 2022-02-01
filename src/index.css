@@ -109,3 +109,8 @@ button:disabled:active {
 .error-text {
   color: #b40e0e;
 }
+
+.required-text {
+  color: #b40e0e;
+  display:inline;
+}
